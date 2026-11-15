@@ -318,13 +318,6 @@ If you use the project in academic work, please credit the thesis and relevant u
 }
 ```
 
-## Usage, access and acknowledgement
-
-This repository documents an academic research project. **No software licence is asserted by this README**; check the repository's `LICENSE` file, if provided, before assuming reuse permissions. M5 data and IBM pretrained model weights are subject to their respective source terms.
-
-For questions about archived experiments, missing checkpoints or access to additional reproducibility material, use the repository's GitHub Issues area or contact the maintainer through their published GitHub profile.
-
----
 
 <div align="center">
   <sub>Research by Kamile Seidu · Department of Computer Science · University of Ghana · 2026</sub>
