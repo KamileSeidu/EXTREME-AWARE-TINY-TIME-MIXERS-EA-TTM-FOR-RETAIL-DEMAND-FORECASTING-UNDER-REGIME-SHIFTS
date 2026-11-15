@@ -1,0 +1,5 @@
+model,total_parameters,trainable_parameters_in_final_stage
+Frozen HP-TTM,799756.0,0
+Retail-only gated adapter,,418
+Ungated cross-feed adapter,,2449
+Primary EA-TTM adapter,,2466

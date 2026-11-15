@@ -1,0 +1,31 @@
+{
+  "status": "PHASE_03_COMPLETE",
+  "dataset_sha256": "83962ce8bbcb0757215d045f81cac3a7cf4465943334ffa168af326bedc5ed59",
+  "split_sha256": "5ff2e30f43a832bb9e513153bb15daa4e1e67c871b43586f2f2f11ef51396447",
+  "validation_origin": 1885,
+  "validation_target": [
+    "d_1886",
+    "d_1913"
+  ],
+  "series_count": 30490,
+  "selected_batch_size": 512,
+  "inference_runtime_seconds": 1.7871065509999653,
+  "inference_peak_memory_gb": 0.0558013916015625,
+  "validation_series_per_second": 17061.097998291985,
+  "seasonal_naive_metrics": {
+    "mse": 7.614616033359884,
+    "rmse": 2.7594593733845554,
+    "mae": 1.2323548704493277,
+    "wape": 0.8888669224907192
+  },
+  "zero_shot_ttm_metrics": {
+    "mse": 4.557263813520326,
+    "rmse": 2.1347748859119373,
+    "mae": 1.0215323422208904,
+    "wape": 0.7368058755052851
+  },
+  "zero_shot_negative_prediction_count": 5333,
+  "zero_shot_negative_prediction_rate": 0.00624677880335473,
+  "zero_shot_mse_improvement_vs_seasonal_naive_percent": 40.151101597837595,
+  "zero_shot_wape_improvement_vs_seasonal_naive_percent": 17.10729054461151
+}

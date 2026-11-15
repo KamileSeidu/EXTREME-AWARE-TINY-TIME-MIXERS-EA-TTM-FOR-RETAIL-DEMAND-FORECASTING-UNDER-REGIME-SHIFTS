@@ -1,0 +1,7 @@
+split_name,role,origin_day,origin_index,origin_date,context_start_day,context_end_day,context_start_date,context_end_date,target_start_day,target_end_day,target_start_date,target_end_date,context_length,forecast_horizon
+train_origin_512,train,d_512,512,2012-06-23,d_1,d_512,2011-01-29,2012-06-23,d_513,d_540,2012-06-24,2012-07-21,512,28
+train_origin_960,train,d_960,960,2013-09-14,d_449,d_960,2012-04-21,2013-09-14,d_961,d_988,2013-09-15,2013-10-12,512,28
+train_origin_1409,train,d_1409,1409,2014-12-07,d_898,d_1409,2013-07-14,2014-12-07,d_1410,d_1437,2014-12-08,2015-01-04,512,28
+train_origin_1857,train,d_1857,1857,2016-02-28,d_1346,d_1857,2014-10-05,2016-02-28,d_1858,d_1885,2016-02-29,2016-03-27,512,28
+validation,model_selection,d_1885,1885,2016-03-27,d_1374,d_1885,2014-11-02,2016-03-27,d_1886,d_1913,2016-03-28,2016-04-24,512,28
+final_test,locked_final_evaluation,d_1913,1913,2016-04-24,d_1402,d_1913,2014-11-30,2016-04-24,d_1914,d_1941,2016-04-25,2016-05-22,512,28

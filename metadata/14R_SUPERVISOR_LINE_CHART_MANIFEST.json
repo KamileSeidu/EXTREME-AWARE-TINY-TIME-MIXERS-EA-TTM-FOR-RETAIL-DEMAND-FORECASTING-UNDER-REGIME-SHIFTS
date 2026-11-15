@@ -1,0 +1,32 @@
+{
+  "main_models": [
+    "Weekly Seasonal Naive",
+    "Zero-shot TTM",
+    "Frozen HP-TTM",
+    "Primary EA-TTM"
+  ],
+  "excluded_from_main_presentation": [
+    "Retail-only gated adapter",
+    "Ungated cross-feed adapter"
+  ],
+  "main_figures": {
+    "model_progression_mse": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/14R_supervisor_line_charts/14R_FIG01_MODEL_PROGRESSION_MSE.png",
+    "hp_vs_ea_regime_mse": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/14R_supervisor_line_charts/14R_FIG02_HP_VS_EA_REGIME_MSE.png",
+    "ea_vs_hp_percent_change": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/14R_supervisor_line_charts/14R_FIG03_EA_VS_HP_PERCENT_CHANGE_LINE.png",
+    "hp_vs_ea_28day_mse": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/14R_supervisor_line_charts/14R_FIG04_HP_VS_EA_28DAY_MSE.png",
+    "hp_vs_ea_28day_extreme_mse": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/14R_supervisor_line_charts/14R_FIG05_HP_VS_EA_28DAY_EXTREME_MSE.png",
+    "ea_vs_hp_28day_improvement": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/14R_supervisor_line_charts/14R_FIG06_EA_VS_HP_28DAY_IMPROVEMENT.png"
+  },
+  "backup_figures": {
+    "model_progression_mae": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/14R_supervisor_line_charts/14R_FIG07_MODEL_PROGRESSION_MAE_BACKUP.png",
+    "model_progression_wape": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/14R_supervisor_line_charts/14R_FIG08_MODEL_PROGRESSION_WAPE_BACKUP.png"
+  },
+  "key_results": {
+    "overall_mse_improvement_percent": 0.7546945937067596,
+    "extreme_mse_improvement_percent": 1.8591384073103026,
+    "positive_extreme_mse_improvement_percent": 2.1290169444618865,
+    "overall_mse_improved_horizons": 27,
+    "extreme_mse_improved_horizons": 27
+  },
+  "post_test_tuning_permitted": false
+}

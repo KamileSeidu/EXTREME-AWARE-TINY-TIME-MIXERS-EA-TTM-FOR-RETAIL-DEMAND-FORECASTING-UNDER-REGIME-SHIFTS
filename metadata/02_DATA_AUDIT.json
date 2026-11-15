@@ -1,0 +1,51 @@
+{
+  "sales_shape": [
+    30490,
+    1947
+  ],
+  "calendar_shape": [
+    1969,
+    14
+  ],
+  "prices_shape": [
+    6841121,
+    4
+  ],
+  "series_count": 30490,
+  "first_sales_day": "d_1",
+  "last_sales_day": "d_1941",
+  "training_history_end_day": "d_1885",
+  "training_distribution": {
+    "observation_count": 57473650,
+    "zero_count": 39296634,
+    "zero_rate": 0.6837330498411011,
+    "mean": 1.1224584309505312,
+    "std": 3.876981929807491,
+    "min": 0.0,
+    "max": 763.0
+  },
+  "calendar_covariates": {
+    "event_name_1_non_null": 162,
+    "event_name_2_non_null": 5,
+    "snap_CA_unique": [
+      0,
+      1
+    ],
+    "snap_TX_unique": [
+      0,
+      1
+    ],
+    "snap_WI_unique": [
+      0,
+      1
+    ],
+    "observed_sales_day_coverage": 1941
+  },
+  "prices": {
+    "rows": 6841121,
+    "unique_store_item_pairs": 30490,
+    "missing_sell_price_rows": 0,
+    "min_sell_price": 0.009999999776482582,
+    "max_sell_price": 107.31999969482422
+  }
+}

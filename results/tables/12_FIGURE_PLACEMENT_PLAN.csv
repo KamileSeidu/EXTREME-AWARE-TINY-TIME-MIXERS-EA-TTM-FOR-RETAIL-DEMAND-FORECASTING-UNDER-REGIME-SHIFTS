@@ -1,0 +1,8 @@
+order,figure,section,purpose
+1,11_FIG01_FINAL_TEST_MSE.png,Benchmark progression,Overall locked-test MSE progression across all models.
+2,11_FIG02_NORMAL_EXTREME_MSE.png,Regime results,Normal versus extreme error trade-off.
+3,11B_FIG07_FOCUSED_MSE_HP_EA_UNGATED.png,Ablation evidence,"Focused HP-TTM, primary EA-TTM, and ungated comparison."
+4,11B_FIG04_PRIMARY_VS_HP_MSE_IMPROVEMENT.png,28-day horizon,Overall MSE improvement by horizon.
+5,11B_FIG05_PRIMARY_VS_HP_EXTREME_MSE_IMPROVEMENT.png,28-day horizon,Extreme-MSE improvement by horizon.
+6,11B_FIG06_EXTREME_PREVALENCE_BY_HORIZON.png,28-day horizon,Extreme prevalence context by horizon.
+7,11_FIG05_BOOTSTRAP_EA_VS_HP.png,Robustness,Paired bootstrap interval.

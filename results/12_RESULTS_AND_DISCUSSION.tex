@@ -1,0 +1,25 @@
+\section{Results and Discussion}
+
+\subsection{Benchmark Progression}
+The weekly seasonal-naive benchmark achieved a locked final-test MSE of 7.1658, RMSE of 2.6769, MAE of 1.2440, and WAPE of 0.8622. Zero-shot TTM reduced MSE to 4.6379, corresponding to a 35.28\% reduction in squared error. Head probing further reduced MSE to 4.5630, an additional 1.61\% improvement over zero-shot TTM.
+
+\subsection{Primary EA-TTM Performance}
+The locked primary EA-TTM achieved MSE 4.5286 compared with 4.5630 for frozen HP-TTM, corresponding to a 0.75\% MSE improvement and a 0.38\% RMSE improvement. MAE changed by -0.88\% and WAPE changed by -0.88\%, where negative values denote deterioration. The result therefore indicates reduced large-error exposure rather than universal improvement in absolute error.
+
+\subsection{Regime-Specific Performance}
+EA-TTM improved all-extreme MSE by 1.86\% and positive-extreme MSE by 2.13\%. Normal-regime MSE changed by -0.73\%, and negative-extreme MSE changed by -1.92\%. Positive extremes accounted for 5.55\% of all final-test observations, while negative extremes accounted for only 0.38\%.
+
+\subsection{Gate Mechanism}
+The Extreme Gate achieved AUROC 0.768 and AUPRC 0.201, representing a 3.39$\times$ lift over the extreme prevalence. The mean absolute effective correction $|g\Delta|$ was 2.29$\times$ larger for extreme observations, and correction direction agreed with the required residual direction on 73.89\% of extreme observations.
+
+\subsection{Ablation Evidence}
+The retail-only gated adapter achieved MSE 4.5328, compared with 4.5286 for the full primary EA-TTM. The ungated cross-feed adapter achieved MSE 4.5132 and extreme MSE 42.3192, both lower than the locked primary EA-TTM. Relative to the primary model, the ungated adapter reduced overall MSE by 0.34\% and extreme MSE by 2.38\%. This supports the decoder cross-feed and residual pathway while showing that multiplicative gating is not forecast-optimal in this experiment. The primary model was not changed because model selection was locked before final-test access.
+
+\subsection{Bootstrap Robustness}
+The observed paired series-level MSE difference (HP-TTM minus EA-TTM) was 0.03444. Across 2,000 paired bootstrap replicates, the 95\% percentile interval was [0.02967, 0.03982], remaining above zero under the chosen store-item resampling scheme.
+
+\subsection{Performance Across the 28-Day Horizon}
+EA-TTM reduced overall MSE on 27 of 28 horizons and extreme MSE on 27 of 28. The strongest overall improvement occurred at horizon 18 (1.92\%), and the strongest extreme-MSE improvement occurred at horizon 13 (3.87\%). The largest mean overall MSE improvement occurred during Days 15-21 (1.19\%), while the largest mean extreme-MSE improvement occurred during Days 15-21 (2.50\%). Positive-extreme MSE improved on 26 horizons, whereas negative-extreme MSE improved on only 8 horizons.
+
+\subsection{Overall Interpretation}
+The evidence supports a qualified conclusion: lightweight decoder cross-feed and retail-aware residual adaptation can improve the squared-error and positive-tail behavior of a frozen retail-adapted TTM under tight parameter and compute constraints. The results do not support universal superiority across every metric, nor do they establish multiplicative gating as the uniquely optimal correction mechanism.

@@ -1,0 +1,21 @@
+{
+  "input_dim": 141,
+  "recent_feature_dim": 5,
+  "decoder_feature_dim": 128,
+  "future_covariate_dim": 8,
+  "encoder_width": 16,
+  "correction_hidden_width": 8,
+  "gate_activation": "sigmoid",
+  "encoder_activation": "GELU",
+  "encoder_normalization": "LayerNorm",
+  "correction_activation": "GELU",
+  "correction_output_activation": null,
+  "correction_final_layer_zero_initialized": true,
+  "gate_weight_zero_initialized": true,
+  "gate_bias_initialized_from_training_extreme_prior": true,
+  "trainable_parameter_count": 2466,
+  "source_initial_architecture_contract_sha256": "b1062c1a40bc6ec33111f40e309961710ccd96af56ec07fac9db40c9c3b1ab35",
+  "training_config_sha256": "f6660977fc785413288b282bb6761e7ef82a0c90936aaf91d4aa0cf7a6383d6f",
+  "selected_checkpoint": "best_balanced",
+  "selected_epoch": 15
+}

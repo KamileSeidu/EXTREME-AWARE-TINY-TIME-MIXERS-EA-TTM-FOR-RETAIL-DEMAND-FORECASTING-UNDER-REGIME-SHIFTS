@@ -1,0 +1,18 @@
+{
+  "status": "EA_TTM_ARCHITECTURE_CONTRACT_LOCKED",
+  "dataset_sha256": "83962ce8bbcb0757215d045f81cac3a7cf4465943334ffa168af326bedc5ed59",
+  "split_sha256": "5ff2e30f43a832bb9e513153bb15daa4e1e67c871b43586f2f2f11ef51396447",
+  "feature_contract_sha256": "fa0abc3b4c9bf645b24e49b8f8f8582057bf3a37e7bf8fd54c374933213e01fb",
+  "crossfeed_contract_sha256": "064448a10cc1fe2b3e9744a94448f83865a3f8ddbec2e315bfcf09e94b93ffb2",
+  "cache_contract_sha256": "ce1996174126f8533098e791765c02dfcdcb0e019f20cf96b4feb10d56c3b9b8",
+  "extreme_contract_sha256": "dd5506baec503de0407936062ccc764c006ff61a481798d143fa9a31a19d33b9",
+  "base_model": "frozen_head_probed_ttm",
+  "input_dimension": 141,
+  "encoder_width": 16,
+  "correction_hidden_width": 8,
+  "adapter_trainable_parameters": 2466,
+  "equation": "ea_forecast = base_forecast + sigmoid(gate_logits) * residual_correction",
+  "identity_initialization_verified": true,
+  "initial_gate_prior_verified": true,
+  "architecture_contract_sha256": "b1062c1a40bc6ec33111f40e309961710ccd96af56ec07fac9db40c9c3b1ab35"
+}

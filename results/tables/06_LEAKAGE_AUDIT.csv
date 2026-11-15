@@ -1,0 +1,6 @@
+role,origin,recent_demand_start,recent_demand_end,future_covariate_start,future_covariate_end,recent_demand_uses_future_target,future_covariates_include_demand,scaler_fit_scope
+train,512,485,512,513,540,False,False,training_only
+train,960,933,960,961,988,False,False,training_only
+train,1409,1382,1409,1410,1437,False,False,training_only
+train,1857,1830,1857,1858,1885,False,False,training_only
+validation,1885,1858,1885,1886,1913,False,False,training_only

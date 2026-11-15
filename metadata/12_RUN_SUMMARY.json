@@ -1,0 +1,97 @@
+{
+  "status": "PHASE_12_RESULTS_DISCUSSION_COMPLETE",
+  "dataset_sha256": "83962ce8bbcb0757215d045f81cac3a7cf4465943334ffa168af326bedc5ed59",
+  "split_sha256": "5ff2e30f43a832bb9e513153bb15daa4e1e67c871b43586f2f2f11ef51396447",
+  "development_lock_sha256": "b68b706f78f96c9cf497369d009323c2bb2c894433c3edb0170aaf028d31a180",
+  "final_evaluation_lock_sha256": "edc6aaa57bea1f3dc9a7908e4c43df687ed78ddb87acc3455994b545bb25bbb2",
+  "primary_model": "Phase 08 best-balanced EA-TTM",
+  "primary_epoch": 15,
+  "post_test_tuning_permitted": false,
+  "headline": {
+    "zero_shot_vs_seasonal_mse_percent": 35.27758087728278,
+    "hp_vs_zero_shot_mse_percent": 1.6130376202844876,
+    "ea_vs_hp_mse_percent": 0.7546945937067596,
+    "ea_vs_hp_rmse_percent": 0.37806195104752865,
+    "ea_vs_hp_mae_percent": -0.8763542193948493,
+    "ea_vs_hp_wape_percent": -0.8763542193948418,
+    "ea_vs_hp_normal_mse_percent": -0.7322761714554105,
+    "ea_vs_hp_extreme_mse_percent": 1.8591384073103026,
+    "ea_vs_hp_positive_extreme_mse_percent": 2.1290169444618865,
+    "ea_vs_hp_negative_extreme_mse_percent": -1.9247710198155024,
+    "ungated_vs_ea_mse_percent": 0.33932646407725825,
+    "ungated_vs_ea_extreme_mse_percent": 2.3805775707039136
+  },
+  "horizon_summary": {
+    "overall_mse_improved_horizons": 27,
+    "extreme_mse_improved_horizons": 27,
+    "positive_extreme_mse_improved_horizons": 26,
+    "negative_extreme_mse_improved_horizons": 8,
+    "mae_improved_horizons": 0,
+    "wape_improved_horizons": 0,
+    "best_overall_horizon": 18,
+    "best_overall_improvement_percent": 1.9222259654852325,
+    "worst_overall_horizon": 6,
+    "worst_overall_improvement_percent": -0.1569182814274166,
+    "best_extreme_horizon": 13,
+    "best_extreme_improvement_percent": 3.870375267785972,
+    "worst_extreme_horizon": 6,
+    "worst_extreme_improvement_percent": -0.8779359313775098
+  },
+  "weekly_horizon_summary": [
+    {
+      "period": "Days 1-7",
+      "start_horizon": 1,
+      "end_horizon": 7,
+      "mean_overall_mse_improvement_percent": 0.23282336496282122,
+      "mean_extreme_mse_improvement_percent": 0.3646190630401844,
+      "mean_positive_extreme_mse_improvement_percent": 0.3414652905188489,
+      "mean_negative_extreme_mse_improvement_percent": 0.5426993180132237,
+      "mean_mae_improvement_percent": -0.5248165558169944,
+      "mean_wape_improvement_percent": -0.5248165558169899
+    },
+    {
+      "period": "Days 8-14",
+      "start_horizon": 8,
+      "end_horizon": 14,
+      "mean_overall_mse_improvement_percent": 0.7133025349037377,
+      "mean_extreme_mse_improvement_percent": 2.1949815798553853,
+      "mean_positive_extreme_mse_improvement_percent": 2.646689736251378,
+      "mean_negative_extreme_mse_improvement_percent": -2.8557450155701387,
+      "mean_mae_improvement_percent": -1.313148289476477,
+      "mean_wape_improvement_percent": -1.3131482894764734
+    },
+    {
+      "period": "Days 15-21",
+      "start_horizon": 15,
+      "end_horizon": 21,
+      "mean_overall_mse_improvement_percent": 1.1881783984385716,
+      "mean_extreme_mse_improvement_percent": 2.5004580282761317,
+      "mean_positive_extreme_mse_improvement_percent": 2.8361991659984653,
+      "mean_negative_extreme_mse_improvement_percent": -3.952048339390021,
+      "mean_mae_improvement_percent": -1.0040237773672431,
+      "mean_wape_improvement_percent": -1.004023777367243
+    },
+    {
+      "period": "Days 22-28",
+      "start_horizon": 22,
+      "end_horizon": 28,
+      "mean_overall_mse_improvement_percent": 0.5384366857351789,
+      "mean_extreme_mse_improvement_percent": 1.3253579349107745,
+      "mean_positive_extreme_mse_improvement_percent": 1.4484988016242433,
+      "mean_negative_extreme_mse_improvement_percent": -1.0426515980788995,
+      "mean_mae_improvement_percent": -0.6929189918816734,
+      "mean_wape_improvement_percent": -0.6929189918816704
+    }
+  ],
+  "association_summary": {
+    "extreme_prevalence_vs_extreme_mse_improvement_correlation": 0.40120242963471725
+  },
+  "artifacts": {
+    "results_discussion_markdown": "/content/drive/MyDrive/EA_TTM_RETAIL/results/12_RESULTS_AND_DISCUSSION.md",
+    "results_discussion_latex": "/content/drive/MyDrive/EA_TTM_RETAIL/results/12_RESULTS_AND_DISCUSSION.tex",
+    "final_report_results_table": "/content/drive/MyDrive/EA_TTM_RETAIL/results/tables/12_FINAL_REPORT_RESULTS_TABLE.csv",
+    "weekly_horizon_summary": "/content/drive/MyDrive/EA_TTM_RETAIL/results/tables/12_HORIZON_WEEKLY_SUMMARY.csv",
+    "figure_placement_plan": "/content/drive/MyDrive/EA_TTM_RETAIL/results/tables/12_FIGURE_PLACEMENT_PLAN.csv",
+    "defense_results_claims": "/content/drive/MyDrive/EA_TTM_RETAIL/results/tables/12_DEFENSE_RESULTS_CLAIMS.csv"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PHASE_11B_HORIZON_VISUALS_COMPLETE",
+  "primary_model": "Phase 08 best-balanced EA-TTM",
+  "primary_epoch": 15,
+  "post_test_tuning_permitted": false,
+  "tables": {
+    "horizon_metrics": "/content/drive/MyDrive/EA_TTM_RETAIL/results/tables/11B_FINAL_TEST_HORIZON_METRICS.csv",
+    "primary_vs_hp_horizon_comparison": "/content/drive/MyDrive/EA_TTM_RETAIL/results/tables/11B_PRIMARY_VS_HP_HORIZON_COMPARISON.csv"
+  },
+  "figures": {
+    "all_models_mse": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/11B_FIG01_HORIZON_MSE_ALL_MODELS.png",
+    "all_models_mae": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/11B_FIG02_HORIZON_MAE_ALL_MODELS.png",
+    "all_models_wape": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/11B_FIG03_HORIZON_WAPE_ALL_MODELS.png",
+    "primary_vs_hp_mse_improvement": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/11B_FIG04_PRIMARY_VS_HP_MSE_IMPROVEMENT.png",
+    "primary_vs_hp_extreme_mse_improvement": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/11B_FIG05_PRIMARY_VS_HP_EXTREME_MSE_IMPROVEMENT.png",
+    "extreme_prevalence": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/11B_FIG06_EXTREME_PREVALENCE_BY_HORIZON.png",
+    "focused_hp_ea_ungated_mse": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/11B_FIG07_FOCUSED_MSE_HP_EA_UNGATED.png"
+  },
+  "summary_document": "/content/drive/MyDrive/EA_TTM_RETAIL/results/11B_HORIZON_GRAPH_SUMMARY.md"
+}

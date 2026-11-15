@@ -1,0 +1,7 @@
+{
+  "cache_contract_sha256": "ce1996174126f8533098e791765c02dfcdcb0e019f20cf96b4feb10d56c3b9b8",
+  "train_next_index": 121960,
+  "validation_next_index": 30490,
+  "train_complete": true,
+  "validation_complete": true
+}

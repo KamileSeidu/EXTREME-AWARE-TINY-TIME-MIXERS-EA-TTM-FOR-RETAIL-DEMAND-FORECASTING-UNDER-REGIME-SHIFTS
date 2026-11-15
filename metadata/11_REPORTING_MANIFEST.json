@@ -1,0 +1,25 @@
+{
+  "status": "PHASE_11_REPORTING_COMPLETE",
+  "primary_model": "Phase 08 best-balanced EA-TTM",
+  "primary_epoch": 15,
+  "post_test_tuning_permitted": false,
+  "tables": {
+    "master_results": "/content/drive/MyDrive/EA_TTM_RETAIL/results/tables/11_MASTER_RESULTS_TABLE.csv",
+    "derived_comparisons": "/content/drive/MyDrive/EA_TTM_RETAIL/results/tables/11_DERIVED_COMPARISONS.csv",
+    "model_complexity": "/content/drive/MyDrive/EA_TTM_RETAIL/results/tables/11_MODEL_COMPLEXITY.csv",
+    "defense_claims": "/content/drive/MyDrive/EA_TTM_RETAIL/results/tables/11_DEFENSE_CLAIMS.csv",
+    "limitations": "/content/drive/MyDrive/EA_TTM_RETAIL/results/tables/11_LIMITATIONS.csv"
+  },
+  "figures": {
+    "final_test_mse": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/11_FIG01_FINAL_TEST_MSE.png",
+    "normal_extreme_mse": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/11_FIG02_NORMAL_EXTREME_MSE.png",
+    "primary_vs_hp_percent_change": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/11_FIG03_PRIMARY_VS_HP_PERCENT_CHANGE.png",
+    "gate_mechanism": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/11_FIG04_GATE_MECHANISM.png",
+    "bootstrap": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/11_FIG05_BOOTSTRAP_EA_VS_HP.png",
+    "validation_test_consistency": "/content/drive/MyDrive/EA_TTM_RETAIL/results/figures/11_FIG06_VALIDATION_TEST_CONSISTENCY.png"
+  },
+  "documents": {
+    "defense_evidence": "/content/drive/MyDrive/EA_TTM_RETAIL/results/11_DEFENSE_EVIDENCE.md",
+    "limitations_markdown": "/content/drive/MyDrive/EA_TTM_RETAIL/results/11_LIMITATIONS.md"
+  }
+}

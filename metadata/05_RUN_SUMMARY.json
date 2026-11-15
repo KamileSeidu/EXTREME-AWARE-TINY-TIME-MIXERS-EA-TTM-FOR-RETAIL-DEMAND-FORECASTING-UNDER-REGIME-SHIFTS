@@ -1,0 +1,60 @@
+{
+  "status": "PHASE_05_COMPLETE",
+  "dataset_sha256": "83962ce8bbcb0757215d045f81cac3a7cf4465943334ffa168af326bedc5ed59",
+  "split_sha256": "5ff2e30f43a832bb9e513153bb15daa4e1e67c871b43586f2f2f11ef51396447",
+  "crossfeed_contract_sha256": "064448a10cc1fe2b3e9744a94448f83865a3f8ddbec2e315bfcf09e94b93ffb2",
+  "cache_contract_sha256": "ce1996174126f8533098e791765c02dfcdcb0e019f20cf96b4feb10d56c3b9b8",
+  "raw_decoder_shape": [
+    "B",
+    1,
+    9,
+    128
+  ],
+  "horizon_aligned_decoder_shape": [
+    "B",
+    28,
+    128
+  ],
+  "matched_native_indices_zero_based": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "additional_trainable_parameters": 0,
+  "loaded_hp_ttm_total_parameters": 799756,
+  "loaded_hp_ttm_trainable_parameters": 0,
+  "reconstruction_max_abs_error": 1.1920928955078125e-07,
+  "reconstruction_mean_abs_error": 1.0395784677541542e-08,
+  "cache_runtime_seconds": 22.893242359,
+  "cached_validation_metrics": {
+    "mse": 4.381207551045613,
+    "rmse": 2.0931334288682155,
+    "mae": 1.0073483622439159,
+    "wape": 0.7265753234677811
+  }
+}

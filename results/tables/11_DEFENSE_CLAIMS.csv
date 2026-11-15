@@ -1,0 +1,9 @@
+claim_id,claim,evidence,qualification
+C01,Pre-trained TTM transfers effectively to M5 retail forecasting without retail-domain training.,Zero-shot TTM final-test MSE is lower than weekly seasonal naive.,The evidence is limited to the locked M5 bottom-level test interval.
+C02,Head probing adds retail-domain adaptation beyond zero-shot TTM.,Frozen HP-TTM final-test MSE is lower than zero-shot TTM MSE.,The incremental gain is smaller than the initial zero-shot gain over seasonal naive.
+C03,The locked primary EA-TTM improves squared-error performance over frozen HP-TTM.,"Overall and extreme MSE are lower, and the paired bootstrap interval for HP-TTM minus EA-TTM MSE remains above zero.","MAE, WAPE, normal-regime MSE, and negative-extreme MSE worsen."
+C04,The Extreme Gate learns meaningful extreme ranking.,Final-test AUROC is 0.768 and AUPRC is about 3.39 times the extreme prevalence.,Useful ranking does not imply that gating improves forecast accuracy versus every ablation.
+C05,EA-TTM routes stronger effective corrections toward extremes.,Mean absolute effective correction is about 2.29 times larger on extremes.,A larger correction is not automatically a better correction.
+C06,The decoder cross-feed provides incremental information beyond retail-only features.,The full gated model showed a small validation advantage over the retail-only gated ablation.,The effect is modest and not uniformly stronger on every final-test regime metric.
+C07,The gate is not the sole source of the forecasting improvement.,The ungated cross-feed ablation achieved lower validation and final-test MSE than the gated primary model.,The primary checkpoint was locked before final-test access and therefore was not replaced.
+C08,The evaluation protocol prevents post-test model selection.,The model-development lock was written before the final-test interval was opened.,This strengthens internal validity but does not replace external replication.

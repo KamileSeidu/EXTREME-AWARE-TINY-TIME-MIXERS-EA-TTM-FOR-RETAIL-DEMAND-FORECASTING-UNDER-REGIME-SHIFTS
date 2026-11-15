@@ -1,0 +1,14 @@
+{
+  "status": "PHASE_13_FINAL_REPORT_COMPLETE",
+  "primary_model": "Phase 08 best-balanced EA-TTM",
+  "primary_epoch": 15,
+  "post_test_tuning_permitted": false,
+  "final_pdf": "/content/drive/MyDrive/EA_TTM_RETAIL/deliverables/EA_TTM_Final_Report_Kamile_Seidu.pdf",
+  "final_pdf_sha256": "1985f1ab264565cd2ac6b502a633944cde8d5488b20ccaa3b5b123a228616b13",
+  "latex_source_zip": "/content/drive/MyDrive/EA_TTM_RETAIL/deliverables/EA_TTM_Final_Report_LaTeX_Source.zip",
+  "latex_source_zip_sha256": "69926f5c72ffbb03146b26278bcb810c18f367dc8f171b117903c0a0d2298cd3",
+  "compile_log": "/content/drive/MyDrive/EA_TTM_RETAIL/deliverables/EA_TTM_FINAL_REPORT/13_LATEX_COMPILE_LOG.txt",
+  "verification": "/content/drive/MyDrive/EA_TTM_RETAIL/deliverables/EA_TTM_FINAL_REPORT/13_PDF_VERIFICATION.json",
+  "rendered_page_count": 10,
+  "source_directory": "/content/drive/MyDrive/EA_TTM_RETAIL/deliverables/EA_TTM_FINAL_REPORT/source"
+}

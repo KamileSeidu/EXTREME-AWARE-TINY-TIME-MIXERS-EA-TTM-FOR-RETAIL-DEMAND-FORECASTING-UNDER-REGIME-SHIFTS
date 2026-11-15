@@ -1,0 +1,52 @@
+{
+  "recent_feature_names": [
+    "recent_median",
+    "robust_scale_mad",
+    "recent_7d_mean_change",
+    "short_term_28d_trend",
+    "zero_demand_rate"
+  ],
+  "recent_feature_mean": [
+    0.35555763357279535,
+    0.3493607156381876,
+    0.0015696183289317235,
+    0.0028790357194973934,
+    0.6534633723192074
+  ],
+  "recent_feature_std": [
+    0.6156359797787844,
+    0.5544702618530699,
+    0.5080922943764258,
+    0.06368794045330946,
+    0.3167396580265592
+  ],
+  "recent_stabilization": {
+    "recent_median": "log1p",
+    "robust_scale_mad": "log1p",
+    "recent_7d_mean_change": "signed_log1p",
+    "short_term_28d_trend": "signed_log1p",
+    "zero_demand_rate": "identity"
+  },
+  "future_covariate_names": [
+    "snap_indicator",
+    "event_indicator",
+    "price_record_observed",
+    "price_change_valid",
+    "log_price",
+    "weekly_log_price_change",
+    "day_of_week_sin",
+    "day_of_week_cos"
+  ],
+  "continuous_future_scaling": {
+    "log_price": {
+      "mean": 1.5332453630293608,
+      "std": 0.5500016015268169,
+      "fit_scope": "observed training prices only"
+    },
+    "weekly_log_price_change": {
+      "mean": 0.00012524134402171018,
+      "std": 0.03888784856505626,
+      "fit_scope": "valid training price changes only"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+comparison,statistic,observed_difference,bootstrap_replicates,ci_95_lower,ci_95_upper,bootstrap_probability_difference_positive
+Primary EA-TTM vs Frozen HP-TTM,paired series MSE difference (HP - EA),0.03443706834444343,2000,0.029668240498898976,0.03981864965845876,1.0

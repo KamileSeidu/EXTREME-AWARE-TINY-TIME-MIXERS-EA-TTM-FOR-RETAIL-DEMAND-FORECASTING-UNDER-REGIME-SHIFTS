@@ -1,0 +1,140 @@
+parameter_name,shape,num_parameters,requires_grad_at_load,dtype
+backbone.encoder.patcher.weight,"[192, 64]",12288,True,torch.float32
+backbone.encoder.patcher.bias,[192],192,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.norm.norm.weight,[48],48,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.norm.norm.bias,[48],48,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.mlp.fc1.weight,"[72, 36]",2592,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.mlp.fc1.bias,[72],72,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.mlp.fc2.weight,"[36, 72]",2592,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.mlp.fc2.bias,[36],36,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.gating_block.attn_layer.weight,"[36, 36]",1296,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.gating_block.attn_layer.bias,[36],36,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.norm.norm.weight,[48],48,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.norm.norm.bias,[48],48,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.mlp.fc1.weight,"[96, 48]",4608,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.mlp.fc1.bias,[96],96,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.mlp.fc2.weight,"[48, 96]",4608,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.mlp.fc2.bias,[48],48,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.gating_block.attn_layer.weight,"[48, 48]",2304,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.gating_block.attn_layer.bias,[48],48,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.norm.norm.weight,[48],48,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.norm.norm.bias,[48],48,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.mlp.fc1.weight,"[72, 36]",2592,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.mlp.fc1.bias,[72],72,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.mlp.fc2.weight,"[36, 72]",2592,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.mlp.fc2.bias,[36],36,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.gating_block.attn_layer.weight,"[36, 36]",1296,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.gating_block.attn_layer.bias,[36],36,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.norm.norm.weight,[48],48,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.norm.norm.bias,[48],48,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.mlp.fc1.weight,"[96, 48]",4608,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.mlp.fc1.bias,[96],96,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.mlp.fc2.weight,"[48, 96]",4608,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.mlp.fc2.bias,[48],48,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.gating_block.attn_layer.weight,"[48, 48]",2304,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.gating_block.attn_layer.bias,[48],48,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.norm.norm.weight,[96],96,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.norm.norm.bias,[96],96,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.mlp.fc1.weight,"[36, 18]",648,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.mlp.fc1.bias,[36],36,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.mlp.fc2.weight,"[18, 36]",648,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.mlp.fc2.bias,[18],18,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.gating_block.attn_layer.weight,"[18, 18]",324,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.gating_block.attn_layer.bias,[18],18,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.norm.norm.weight,[96],96,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.norm.norm.bias,[96],96,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.mlp.fc1.weight,"[192, 96]",18432,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.mlp.fc1.bias,[192],192,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.mlp.fc2.weight,"[96, 192]",18432,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.mlp.fc2.bias,[96],96,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.gating_block.attn_layer.weight,"[96, 96]",9216,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.gating_block.attn_layer.bias,[96],96,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.norm.norm.weight,[96],96,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.norm.norm.bias,[96],96,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.mlp.fc1.weight,"[36, 18]",648,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.mlp.fc1.bias,[36],36,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.mlp.fc2.weight,"[18, 36]",648,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.mlp.fc2.bias,[18],18,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.gating_block.attn_layer.weight,"[18, 18]",324,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.gating_block.attn_layer.bias,[18],18,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.norm.norm.weight,[96],96,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.norm.norm.bias,[96],96,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.mlp.fc1.weight,"[192, 96]",18432,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.mlp.fc1.bias,[192],192,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.mlp.fc2.weight,"[96, 192]",18432,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.mlp.fc2.bias,[96],96,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.gating_block.attn_layer.weight,"[96, 96]",9216,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.gating_block.attn_layer.bias,[96],96,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.norm.norm.weight,[192],192,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.norm.norm.bias,[192],192,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.mlp.fc1.weight,"[18, 9]",162,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.mlp.fc1.bias,[18],18,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.mlp.fc2.weight,"[9, 18]",162,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.mlp.fc2.bias,[9],9,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.gating_block.attn_layer.weight,"[9, 9]",81,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.gating_block.attn_layer.bias,[9],9,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.norm.norm.weight,[192],192,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.norm.norm.bias,[192],192,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.mlp.fc1.weight,"[384, 192]",73728,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.mlp.fc1.bias,[384],384,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.mlp.fc2.weight,"[192, 384]",73728,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.mlp.fc2.bias,[192],192,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.gating_block.attn_layer.weight,"[192, 192]",36864,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.gating_block.attn_layer.bias,[192],192,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.norm.norm.weight,[192],192,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.norm.norm.bias,[192],192,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.mlp.fc1.weight,"[18, 9]",162,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.mlp.fc1.bias,[18],18,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.mlp.fc2.weight,"[9, 18]",162,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.mlp.fc2.bias,[9],9,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.gating_block.attn_layer.weight,"[9, 9]",81,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.gating_block.attn_layer.bias,[9],9,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.norm.norm.weight,[192],192,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.norm.norm.bias,[192],192,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.mlp.fc1.weight,"[384, 192]",73728,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.mlp.fc1.bias,[384],384,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.mlp.fc2.weight,"[192, 384]",73728,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.mlp.fc2.bias,[192],192,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.gating_block.attn_layer.weight,"[192, 192]",36864,True,torch.float32
+backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.gating_block.attn_layer.bias,[192],192,True,torch.float32
+backbone.encoder.freq_mod.0.weight,"[10, 64]",640,True,torch.float32
+backbone.encoder.freq_mod.1.weight,"[128, 64]",8192,True,torch.float32
+backbone.encoder.freq_mod.1.bias,[128],128,True,torch.float32
+backbone.encoder.freq_mod.3.weight,"[192, 128]",24576,True,torch.float32
+backbone.encoder.freq_mod.3.bias,[192],192,True,torch.float32
+decoder.adapter.weight,"[128, 192]",24576,True,torch.float32
+decoder.adapter.bias,[128],128,True,torch.float32
+decoder.decoder_block.mixers.0.patch_mixer.norm.norm.weight,[128],128,True,torch.float32
+decoder.decoder_block.mixers.0.patch_mixer.norm.norm.bias,[128],128,True,torch.float32
+decoder.decoder_block.mixers.0.patch_mixer.mlp.fc1.weight,"[18, 9]",162,True,torch.float32
+decoder.decoder_block.mixers.0.patch_mixer.mlp.fc1.bias,[18],18,True,torch.float32
+decoder.decoder_block.mixers.0.patch_mixer.mlp.fc2.weight,"[9, 18]",162,True,torch.float32
+decoder.decoder_block.mixers.0.patch_mixer.mlp.fc2.bias,[9],9,True,torch.float32
+decoder.decoder_block.mixers.0.patch_mixer.gating_block.attn_layer.weight,"[9, 9]",81,True,torch.float32
+decoder.decoder_block.mixers.0.patch_mixer.gating_block.attn_layer.bias,[9],9,True,torch.float32
+decoder.decoder_block.mixers.0.feature_mixer.norm.norm.weight,[128],128,True,torch.float32
+decoder.decoder_block.mixers.0.feature_mixer.norm.norm.bias,[128],128,True,torch.float32
+decoder.decoder_block.mixers.0.feature_mixer.mlp.fc1.weight,"[256, 128]",32768,True,torch.float32
+decoder.decoder_block.mixers.0.feature_mixer.mlp.fc1.bias,[256],256,True,torch.float32
+decoder.decoder_block.mixers.0.feature_mixer.mlp.fc2.weight,"[128, 256]",32768,True,torch.float32
+decoder.decoder_block.mixers.0.feature_mixer.mlp.fc2.bias,[128],128,True,torch.float32
+decoder.decoder_block.mixers.0.feature_mixer.gating_block.attn_layer.weight,"[128, 128]",16384,True,torch.float32
+decoder.decoder_block.mixers.0.feature_mixer.gating_block.attn_layer.bias,[128],128,True,torch.float32
+decoder.decoder_block.mixers.1.patch_mixer.norm.norm.weight,[128],128,True,torch.float32
+decoder.decoder_block.mixers.1.patch_mixer.norm.norm.bias,[128],128,True,torch.float32
+decoder.decoder_block.mixers.1.patch_mixer.mlp.fc1.weight,"[18, 9]",162,True,torch.float32
+decoder.decoder_block.mixers.1.patch_mixer.mlp.fc1.bias,[18],18,True,torch.float32
+decoder.decoder_block.mixers.1.patch_mixer.mlp.fc2.weight,"[9, 18]",162,True,torch.float32
+decoder.decoder_block.mixers.1.patch_mixer.mlp.fc2.bias,[9],9,True,torch.float32
+decoder.decoder_block.mixers.1.patch_mixer.gating_block.attn_layer.weight,"[9, 9]",81,True,torch.float32
+decoder.decoder_block.mixers.1.patch_mixer.gating_block.attn_layer.bias,[9],9,True,torch.float32
+decoder.decoder_block.mixers.1.feature_mixer.norm.norm.weight,[128],128,True,torch.float32
+decoder.decoder_block.mixers.1.feature_mixer.norm.norm.bias,[128],128,True,torch.float32
+decoder.decoder_block.mixers.1.feature_mixer.mlp.fc1.weight,"[256, 128]",32768,True,torch.float32
+decoder.decoder_block.mixers.1.feature_mixer.mlp.fc1.bias,[256],256,True,torch.float32
+decoder.decoder_block.mixers.1.feature_mixer.mlp.fc2.weight,"[128, 256]",32768,True,torch.float32
+decoder.decoder_block.mixers.1.feature_mixer.mlp.fc2.bias,[128],128,True,torch.float32
+decoder.decoder_block.mixers.1.feature_mixer.gating_block.attn_layer.weight,"[128, 128]",16384,True,torch.float32
+decoder.decoder_block.mixers.1.feature_mixer.gating_block.attn_layer.bias,[128],128,True,torch.float32
+head.base_forecast_block.weight,"[48, 1152]",55296,True,torch.float32
+head.base_forecast_block.bias,[48],48,True,torch.float32

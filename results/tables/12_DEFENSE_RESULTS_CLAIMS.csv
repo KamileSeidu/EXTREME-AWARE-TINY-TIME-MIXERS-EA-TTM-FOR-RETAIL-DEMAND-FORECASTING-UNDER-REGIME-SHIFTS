@@ -1,0 +1,5 @@
+claim,evidence,qualification
+EA-TTM improved locked-test overall MSE over HP-TTM.,4.5630 to 4.5286 (0.75% improvement).,MAE and WAPE worsened.
+EA-TTM's strongest regime-level evidence is on positive extremes.,Positive-extreme MSE improved by 2.13%.,Negative-extreme MSE changed by -1.92%.
+The gate learned meaningful extreme-regime information.,AUROC=0.768; AUPRC lift=3.39x; effective correction extreme/normal=2.29x.,The ungated cross-feed ablation achieved lower MSE.
+The squared-error benefit is distributed across most forecast horizons.,Overall MSE improved on 27/28 horizons; extreme MSE on 27/28.,Magnitude varies across the horizon.

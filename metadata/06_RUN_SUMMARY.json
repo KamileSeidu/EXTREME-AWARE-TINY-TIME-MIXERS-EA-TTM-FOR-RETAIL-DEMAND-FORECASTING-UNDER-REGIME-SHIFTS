@@ -1,0 +1,36 @@
+{
+  "status": "PHASE_06_COMPLETE",
+  "dataset_sha256": "83962ce8bbcb0757215d045f81cac3a7cf4465943334ffa168af326bedc5ed59",
+  "split_sha256": "5ff2e30f43a832bb9e513153bb15daa4e1e67c871b43586f2f2f11ef51396447",
+  "feature_contract_sha256": "fa0abc3b4c9bf645b24e49b8f8f8582057bf3a37e7bf8fd54c374933213e01fb",
+  "training_sample_count": 121960,
+  "validation_series_count": 30490,
+  "recent_lookback_days": 28,
+  "recent_feature_dimension": 5,
+  "decoder_feature_dimension": 128,
+  "future_covariate_dimension": 8,
+  "retail_shock_encoder_input_dimension": 141,
+  "training_recent_shape": [
+    121960,
+    5
+  ],
+  "training_future_shape": [
+    121960,
+    28,
+    8
+  ],
+  "validation_recent_shape": [
+    30490,
+    5
+  ],
+  "validation_future_shape": [
+    30490,
+    28,
+    8
+  ],
+  "price_record_observed_rate": 0.865097748676381,
+  "price_change_valid_rate": 0.8630560956753971,
+  "snap_rate": 0.32767857142857143,
+  "event_rate": 0.07142857142857142,
+  "locked_final_test_used": false
+}

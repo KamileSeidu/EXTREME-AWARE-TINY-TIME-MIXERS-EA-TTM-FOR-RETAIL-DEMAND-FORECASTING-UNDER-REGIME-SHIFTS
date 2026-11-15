@@ -1,0 +1,65 @@
+{
+  "status": "PHASE_09_COMPLETE",
+  "dataset_sha256": "83962ce8bbcb0757215d045f81cac3a7cf4465943334ffa168af326bedc5ed59",
+  "split_sha256": "5ff2e30f43a832bb9e513153bb15daa4e1e67c871b43586f2f2f11ef51396447",
+  "development_lock_sha256": "b68b706f78f96c9cf497369d009323c2bb2c894433c3edb0170aaf028d31a180",
+  "primary_model": "Phase 08 best-balanced EA-TTM",
+  "primary_epoch": 15,
+  "best_overall_epoch": 20,
+  "best_extreme_epoch": 15,
+  "primary_validation": {
+    "mse": 4.368124020733498,
+    "extreme_mse": 39.21096076831241,
+    "normal_mse": 2.2502839954626053,
+    "balanced_score": 0.9886987815906065
+  },
+  "best_overall_checkpoint_validation": {
+    "mse": 4.366784101617184,
+    "extreme_mse": 39.296557666782576,
+    "normal_mse": 2.2436598260055907,
+    "balanced_score": 0.9896159460532592
+  },
+  "retail_only_validation": {
+    "best_epoch": 17,
+    "parameter_count": 418,
+    "mse": 4.371620031449808,
+    "extreme_mse": 39.29177084972808,
+    "normal_mse": 2.2490806519147952,
+    "balanced_score": 0.9901079987653435,
+    "gate_auroc": 0.7716757729545973,
+    "gate_auprc": 0.20418791072239859
+  },
+  "ungated_crossfeed_validation": {
+    "best_epoch": 6,
+    "parameter_count": 2449,
+    "mse": 4.355833044226982,
+    "extreme_mse": 38.24515119988719,
+    "normal_mse": 2.2959504078287303,
+    "balanced_score": 0.9752221165997643
+  },
+  "mechanism_evidence": {
+    "extreme_prevalence": 0.0572998172702994,
+    "gate_auroc": 0.7771973002769222,
+    "gate_auprc": 0.20399457866169207,
+    "gate_auprc_lift_vs_prevalence": 3.560126164092149,
+    "mean_abs_effective_correction_extreme": 0.13758453202140958,
+    "mean_abs_effective_correction_normal": 0.06294568131046092,
+    "effective_correction_extreme_to_normal_ratio": 2.185766031235958,
+    "extreme_point_squared_error_improvement_rate": 0.7692260517600883,
+    "normal_point_squared_error_improvement_rate": 0.32008866777170036,
+    "overall_correction_direction_agreement": 0.3560207093660685,
+    "extreme_correction_direction_agreement": 0.770595690747782
+  },
+  "decoder_crossfeed_increment_percent": {
+    "balanced_score_change_vs_retail_only_percent": 0.14232964247276533,
+    "overall_mse_change_vs_retail_only_percent": 0.07997059879768102,
+    "extreme_mse_change_vs_retail_only_percent": 0.20566668202542848
+  },
+  "gate_increment_percent": {
+    "balanced_score_change_vs_ungated_percent": -1.3819072354337405,
+    "overall_mse_change_vs_ungated_percent": -0.28217281015411183,
+    "extreme_mse_change_vs_ungated_percent": -2.5253124595519196
+  },
+  "locked_final_test_used": false,
+  "post_phase09_tuning_permitted": false
+}

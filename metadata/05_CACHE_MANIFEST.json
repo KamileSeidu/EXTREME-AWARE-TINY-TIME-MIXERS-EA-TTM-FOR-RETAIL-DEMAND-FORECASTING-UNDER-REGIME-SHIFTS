@@ -1,0 +1,45 @@
+{
+  "cache_contract_sha256": "ce1996174126f8533098e791765c02dfcdcb0e019f20cf96b4feb10d56c3b9b8",
+  "dataset_sha256": "83962ce8bbcb0757215d045f81cac3a7cf4465943334ffa168af326bedc5ed59",
+  "split_sha256": "5ff2e30f43a832bb9e513153bb15daa4e1e67c871b43586f2f2f11ef51396447",
+  "sample_order": {
+    "train": "origin-major then M5 store-item series order",
+    "validation": "M5 store-item series order"
+  },
+  "train_decoder_hidden": {
+    "path": "/content/drive/MyDrive/EA_TTM_RETAIL/runs/05_decoder_crossfeed/cache/train_decoder_hidden.npy",
+    "shape": [
+      121960,
+      1,
+      9,
+      128
+    ],
+    "dtype": "float32"
+  },
+  "train_base_forecast": {
+    "path": "/content/drive/MyDrive/EA_TTM_RETAIL/runs/05_decoder_crossfeed/cache/train_base_forecast.npy",
+    "shape": [
+      121960,
+      28
+    ],
+    "dtype": "float32"
+  },
+  "validation_decoder_hidden": {
+    "path": "/content/drive/MyDrive/EA_TTM_RETAIL/runs/05_decoder_crossfeed/cache/validation_decoder_hidden.npy",
+    "shape": [
+      30490,
+      1,
+      9,
+      128
+    ],
+    "dtype": "float32"
+  },
+  "validation_base_forecast": {
+    "path": "/content/drive/MyDrive/EA_TTM_RETAIL/runs/05_decoder_crossfeed/cache/validation_base_forecast.npy",
+    "shape": [
+      30490,
+      28
+    ],
+    "dtype": "float32"
+  }
+}

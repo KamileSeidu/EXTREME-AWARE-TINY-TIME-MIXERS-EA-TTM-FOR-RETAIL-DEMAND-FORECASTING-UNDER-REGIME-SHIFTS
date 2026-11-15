@@ -1,0 +1,58 @@
+{
+  "status": "PHASE_08_COMPLETE",
+  "dataset_sha256": "83962ce8bbcb0757215d045f81cac3a7cf4465943334ffa168af326bedc5ed59",
+  "split_sha256": "5ff2e30f43a832bb9e513153bb15daa4e1e67c871b43586f2f2f11ef51396447",
+  "feature_contract_sha256": "fa0abc3b4c9bf645b24e49b8f8f8582057bf3a37e7bf8fd54c374933213e01fb",
+  "crossfeed_contract_sha256": "064448a10cc1fe2b3e9744a94448f83865a3f8ddbec2e315bfcf09e94b93ffb2",
+  "extreme_contract_sha256": "dd5506baec503de0407936062ccc764c006ff61a481798d143fa9a31a19d33b9",
+  "architecture_contract_sha256": "b1062c1a40bc6ec33111f40e309961710ccd96af56ec07fac9db40c9c3b1ab35",
+  "training_config_sha256": "f6660977fc785413288b282bb6761e7ef82a0c90936aaf91d4aa0cf7a6383d6f",
+  "adapter_trainable_parameters": 2466,
+  "training_batch_size": 512,
+  "initial_learning_rate": 0.001,
+  "best_balanced_epoch": 15,
+  "best_overall_epoch": 20,
+  "best_extreme_epoch": 15,
+  "primary_selected_epoch": 15,
+  "global_step": 5019,
+  "training_runtime_seconds": 116.82851426299999,
+  "hp_ttm_validation_metrics": {
+    "mse": 4.381207550987759,
+    "rmse": 2.0931334288543955,
+    "mae": 1.00734836222702,
+    "wape": 0.726575323464449
+  },
+  "hp_ttm_validation_extreme_mse": 39.99551897843197,
+  "hp_ttm_validation_normal_mse": 2.2164752486230572,
+  "ea_ttm_validation_metrics": {
+    "mse": 4.368124020733498,
+    "rmse": 2.090005746579061,
+    "mae": 1.022394638353978,
+    "wape": 0.7374278282719329
+  },
+  "ea_ttm_validation_extreme_mse": 39.21096076831241,
+  "ea_ttm_validation_normal_mse": 2.2502839954626053,
+  "ea_ttm_balanced_score": 0.9886987815906065,
+  "validation_improvement_vs_hp": {
+    "overall_mse_improvement_percent": 0.2986284055707694,
+    "overall_rmse_improvement_percent": 0.1494258431984617,
+    "overall_mae_improvement_percent": -1.4936517188248497,
+    "overall_wape_improvement_percent": -1.4936517188248422,
+    "extreme_mse_improvement_percent": 1.961615276307923,
+    "normal_mse_improvement_percent": -1.5253383434148917
+  },
+  "gate_metrics": {
+    "auroc": 0.7771973002769222,
+    "auprc": 0.20399457866169207,
+    "precision_at_0_5": 0.6354166666666666,
+    "recall_at_0_5": 0.016210801749867124,
+    "f1_at_0_5": 0.03161503807359566,
+    "mean_gate_extreme": 0.12624317171887353,
+    "mean_gate_normal": 0.052355947005871664
+  },
+  "correction_diagnostics": {
+    "mean_abs_correction_extreme": 1.167432024643243,
+    "mean_abs_correction_normal": 1.8669456085084015
+  },
+  "locked_final_test_used": false
+}

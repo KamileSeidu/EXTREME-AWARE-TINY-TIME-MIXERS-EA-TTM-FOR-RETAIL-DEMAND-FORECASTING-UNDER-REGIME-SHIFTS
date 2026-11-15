@@ -1,0 +1,57 @@
+{
+  "status": "PHASE_06_FEATURE_CONTRACT_LOCKED",
+  "dataset_sha256": "83962ce8bbcb0757215d045f81cac3a7cf4465943334ffa168af326bedc5ed59",
+  "split_sha256": "5ff2e30f43a832bb9e513153bb15daa4e1e67c871b43586f2f2f11ef51396447",
+  "crossfeed_contract_sha256": "064448a10cc1fe2b3e9744a94448f83865a3f8ddbec2e315bfcf09e94b93ffb2",
+  "cache_contract_sha256": "ce1996174126f8533098e791765c02dfcdcb0e019f20cf96b4feb10d56c3b9b8",
+  "recent_lookback_days": 28,
+  "recent_feature_names": [
+    "recent_median",
+    "robust_scale_mad",
+    "recent_7d_mean_change",
+    "short_term_28d_trend",
+    "zero_demand_rate"
+  ],
+  "recent_feature_dimension": 5,
+  "decoder_feature_dimension": 128,
+  "future_covariate_names": [
+    "snap_indicator",
+    "event_indicator",
+    "price_record_observed",
+    "price_change_valid",
+    "log_price",
+    "weekly_log_price_change",
+    "day_of_week_sin",
+    "day_of_week_cos"
+  ],
+  "future_covariate_dimension": 8,
+  "retail_shock_encoder_input_dimension": 141,
+  "training_feature_shape": {
+    "recent": [
+      121960,
+      5
+    ],
+    "future": [
+      121960,
+      28,
+      8
+    ]
+  },
+  "validation_feature_shape": {
+    "recent": [
+      30490,
+      5
+    ],
+    "future": [
+      30490,
+      28,
+      8
+    ]
+  },
+  "sample_order": {
+    "training": "origin-major then M5 store-item series order",
+    "validation": "M5 store-item series order"
+  },
+  "locked_final_test_used": false,
+  "feature_contract_sha256": "fa0abc3b4c9bf645b24e49b8f8f8582057bf3a37e7bf8fd54c374933213e01fb"
+}

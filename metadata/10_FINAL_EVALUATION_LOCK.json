@@ -1,0 +1,24 @@
+{
+  "status": "FINAL_TEST_EVALUATION_COMPLETE",
+  "dataset_sha256": "83962ce8bbcb0757215d045f81cac3a7cf4465943334ffa168af326bedc5ed59",
+  "split_sha256": "5ff2e30f43a832bb9e513153bb15daa4e1e67c871b43586f2f2f11ef51396447",
+  "development_lock_sha256": "b68b706f78f96c9cf497369d009323c2bb2c894433c3edb0170aaf028d31a180",
+  "primary_model": "Phase 08 best-balanced EA-TTM",
+  "primary_epoch": 15,
+  "final_test_interval": [
+    "d_1914",
+    "d_1941"
+  ],
+  "models_evaluated": [
+    "Weekly Seasonal Naive",
+    "Zero-shot TTM",
+    "Frozen HP-TTM",
+    "Retail-only gated adapter",
+    "Ungated cross-feed adapter",
+    "Primary EA-TTM"
+  ],
+  "post_test_tuning_permitted": false,
+  "test_results_may_change_model_selection": false,
+  "bootstrap_replicates": 2000,
+  "final_evaluation_lock_sha256": "edc6aaa57bea1f3dc9a7908e4c43df687ed78ddb87acc3455994b545bb25bbb2"
+}

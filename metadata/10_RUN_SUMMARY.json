@@ -1,0 +1,135 @@
+{
+  "status": "PHASE_10_COMPLETE",
+  "dataset_sha256": "83962ce8bbcb0757215d045f81cac3a7cf4465943334ffa168af326bedc5ed59",
+  "split_sha256": "5ff2e30f43a832bb9e513153bb15daa4e1e67c871b43586f2f2f11ef51396447",
+  "development_lock_sha256": "b68b706f78f96c9cf497369d009323c2bb2c894433c3edb0170aaf028d31a180",
+  "final_evaluation_lock_sha256": "edc6aaa57bea1f3dc9a7908e4c43df687ed78ddb87acc3455994b545bb25bbb2",
+  "final_test_interval": [
+    "d_1914",
+    "d_1941"
+  ],
+  "test_extreme_rates": {
+    "all": 0.05927470364990863,
+    "positive": 0.05546432085461275,
+    "negative": 0.0038103827952958814
+  },
+  "overall_metrics": {
+    "Weekly Seasonal Naive": {
+      "mse": 7.1657662933983035,
+      "rmse": 2.6768948977123297,
+      "mae": 1.2439722625685237,
+      "wape": 0.8621813918900049
+    },
+    "Zero-shot TTM": {
+      "mse": 4.637857293767649,
+      "rmse": 2.153568502223147,
+      "mae": 1.04141424545086,
+      "wape": 0.721791000245427
+    },
+    "Frozen HP-TTM": {
+      "mse": 4.5630469108440685,
+      "rmse": 2.1361289546382887,
+      "mae": 1.0289023857646808,
+      "wape": 0.7131191890451607
+    },
+    "Retail-only gated adapter": {
+      "mse": 4.532796460271276,
+      "rmse": 2.129036509849297,
+      "mae": 1.0384826744918205,
+      "wape": 0.7197591656089617
+    },
+    "Ungated cross-feed adapter": {
+      "mse": 4.513243070849216,
+      "rmse": 2.124439472154765,
+      "mae": 1.0419089295046788,
+      "wape": 0.7221338594866666
+    },
+    "Primary EA-TTM": {
+      "mse": 4.528609842499625,
+      "rmse": 2.128053063835492,
+      "mae": 1.037919215235784,
+      "wape": 0.7193686391476722
+    }
+  },
+  "regime_metrics": {
+    "Weekly Seasonal Naive": {
+      "normal_mse": 4.466176741591501,
+      "extreme_mse": 50.00988064184649,
+      "positive_extreme_mse": 49.8572363836033,
+      "negative_extreme_mse": 52.231786043652015
+    },
+    "Zero-shot TTM": {
+      "normal_mse": 2.1070932393924355,
+      "extreme_mse": 44.802609176891586,
+      "positive_extreme_mse": 44.70220733154317,
+      "negative_extreme_mse": 46.264068684758996
+    },
+    "Frozen HP-TTM": {
+      "normal_mse": 2.0672777974228063,
+      "extreme_mse": 44.17240797507676,
+      "positive_extreme_mse": 44.0642588682067,
+      "negative_extreme_mse": 45.74663741233577
+    },
+    "Retail-only gated adapter": {
+      "normal_mse": 2.0895528258520364,
+      "extreme_mse": 43.308546493870246,
+      "positive_extreme_mse": 43.12502896001261,
+      "negative_extreme_mse": 45.97984644643505
+    },
+    "Ungated cross-feed adapter": {
+      "normal_mse": 2.1311073750762306,
+      "extreme_mse": 42.3191732630557,
+      "positive_extreme_mse": 41.821250910869765,
+      "negative_extreme_mse": 49.56698183924881
+    },
+    "Primary EA-TTM": {
+      "normal_mse": 2.0824159801311217,
+      "extreme_mse": 43.35118177297831,
+      "positive_extreme_mse": 43.12612333045103,
+      "negative_extreme_mse": 46.62715543178849
+    }
+  },
+  "primary_ea_vs_hp_percent": {
+    "overall_mse_improvement_percent": 0.7546945937067596,
+    "overall_rmse_improvement_percent": 0.37806195104752865,
+    "overall_mae_improvement_percent": -0.8763542193948493,
+    "overall_wape_improvement_percent": -0.8763542193948418,
+    "normal_mse_improvement_percent": -0.7322761714554105,
+    "extreme_mse_improvement_percent": 1.8591384073103026,
+    "positive_extreme_mse_improvement_percent": 2.1290169444618865,
+    "negative_extreme_mse_improvement_percent": -1.9247710198155024
+  },
+  "ungated_vs_primary_percent": {
+    "overall_mse_percent": 0.33932646407725825,
+    "extreme_mse_percent": 2.3805775707039136
+  },
+  "primary_mechanism": {
+    "test_extreme_rate": 0.05927470364990863,
+    "test_positive_extreme_rate": 0.05546432085461275,
+    "test_negative_extreme_rate": 0.0038103827952958814,
+    "gate_auroc": 0.7677167936799729,
+    "gate_auprc": 0.2012210791101284,
+    "gate_auprc_lift_vs_prevalence": 3.3947209639138967,
+    "mean_gate_extreme": 0.1212863064870381,
+    "mean_gate_normal": 0.052498983794228904,
+    "mean_abs_effective_correction_extreme": 0.12856180807059472,
+    "mean_abs_effective_correction_normal": 0.05602540595393895,
+    "effective_correction_extreme_to_normal_ratio": 2.294705515856347,
+    "extreme_point_squared_error_improvement_rate": 0.73776776539404,
+    "normal_point_squared_error_improvement_rate": 0.34075401311890186,
+    "overall_correction_direction_agreement": 0.37254486248418683,
+    "extreme_correction_direction_agreement": 0.7388546359971544
+  },
+  "paired_bootstrap": {
+    "observed_mse_difference_hp_minus_ea": 0.03443706834444343,
+    "ci_95_lower": 0.029668240498898976,
+    "ci_95_upper": 0.03981864965845876,
+    "probability_difference_positive": 1.0,
+    "replicates": 2000
+  },
+  "runtime_seconds": {
+    "ttm_inference": 2.703135775999982,
+    "adapter_inference": 0.6208985210000151
+  },
+  "post_test_tuning_permitted": false
+}

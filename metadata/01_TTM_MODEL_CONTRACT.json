@@ -1,0 +1,6558 @@
+{
+  "status": "PHASE_01_TTM_CONTRACT_AUDITED",
+  "granite_tsfm_distribution_version": "0.3.9",
+  "tsfm_source_resolution": "installed_distribution",
+  "tsfm_source_commit": null,
+  "created_utc": "2026-09-22T16:48:06.306886+00:00",
+  "requested_contract": {
+    "repository": "ibm-granite/granite-timeseries-ttm-r2",
+    "resolved_revision": "512-48-ft-r2.1",
+    "resolved_commit_sha": "b972f0c22190b7502764526004d16e2b4ed39e8c",
+    "context_length": 512,
+    "prediction_length": 28,
+    "frequency": "D",
+    "prefer_l1_loss": false,
+    "seed": 2026
+  },
+  "actual_contract": {
+    "model_class": "TinyTimeMixerForPrediction",
+    "model_module": "tsfm_public.models.tinytimemixer.modeling_tinytimemixer",
+    "config_context_length": 512,
+    "config_prediction_length": 48,
+    "config_prediction_filter_length": 28,
+    "config_patch_length": 64,
+    "config_patch_stride": 64,
+    "config_d_model": 192,
+    "config_decoder_d_model": 128,
+    "config_decoder_num_layers": 2,
+    "config_loss": "mse",
+    "config_resolution_prefix_tuning": true
+  },
+  "output_hidden_states_supported": true,
+  "resolution_prefix_tuning_enabled": true,
+  "frequency": "D",
+  "frequency_token_value": 8,
+  "total_parameter_count": 799756,
+  "trainable_parameter_count_at_load": 799756,
+  "component_candidates": {
+    "backbone_candidates": [
+      "backbone",
+      "backbone.encoder",
+      "backbone.encoder.patcher",
+      "backbone.encoder.mlp_mixer_encoder",
+      "backbone.encoder.mlp_mixer_encoder.mixers",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.norm.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.mlp",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.mlp.fc1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.mlp.dropout1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.mlp.fc2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.mlp.dropout2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.gating_block",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.gating_block.attn_layer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.norm.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.mlp",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.mlp.fc1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.mlp.dropout1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.mlp.fc2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.mlp.dropout2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.gating_block",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.gating_block.attn_layer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.norm.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.mlp",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.mlp.fc1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.mlp.dropout1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.mlp.fc2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.mlp.dropout2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.gating_block",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.gating_block.attn_layer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.norm.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.mlp",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.mlp.fc1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.mlp.dropout1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.mlp.fc2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.mlp.dropout2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.gating_block",
+      "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.gating_block.attn_layer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.norm.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.mlp",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.mlp.fc1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.mlp.dropout1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.mlp.fc2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.mlp.dropout2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.gating_block",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.gating_block.attn_layer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.norm.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.mlp",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.mlp.fc1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.mlp.dropout1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.mlp.fc2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.mlp.dropout2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.gating_block",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.gating_block.attn_layer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.norm.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.mlp",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.mlp.fc1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.mlp.dropout1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.mlp.fc2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.mlp.dropout2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.gating_block",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.gating_block.attn_layer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.norm.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.mlp",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.mlp.fc1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.mlp.dropout1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.mlp.fc2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.mlp.dropout2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.gating_block",
+      "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.gating_block.attn_layer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.norm.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.mlp",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.mlp.fc1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.mlp.dropout1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.mlp.fc2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.mlp.dropout2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.gating_block",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.gating_block.attn_layer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.norm.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.mlp",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.mlp.fc1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.mlp.dropout1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.mlp.fc2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.mlp.dropout2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.gating_block",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.gating_block.attn_layer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.norm.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.mlp",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.mlp.fc1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.mlp.dropout1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.mlp.fc2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.mlp.dropout2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.gating_block",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.gating_block.attn_layer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.norm.norm",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.mlp",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.mlp.fc1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.mlp.dropout1",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.mlp.fc2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.mlp.dropout2",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.gating_block",
+      "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.gating_block.attn_layer",
+      "backbone.encoder.freq_mod",
+      "backbone.encoder.freq_mod.0",
+      "backbone.encoder.freq_mod.1",
+      "backbone.encoder.freq_mod.2",
+      "backbone.encoder.freq_mod.3",
+      "backbone.patching",
+      "backbone.scaler"
+    ],
+    "decoder_candidates": [
+      "decoder",
+      "decoder.adapter",
+      "decoder.decoder_block",
+      "decoder.decoder_block.mixers",
+      "decoder.decoder_block.mixers.0",
+      "decoder.decoder_block.mixers.0.patch_mixer",
+      "decoder.decoder_block.mixers.0.patch_mixer.norm",
+      "decoder.decoder_block.mixers.0.patch_mixer.norm.norm",
+      "decoder.decoder_block.mixers.0.patch_mixer.mlp",
+      "decoder.decoder_block.mixers.0.patch_mixer.mlp.fc1",
+      "decoder.decoder_block.mixers.0.patch_mixer.mlp.dropout1",
+      "decoder.decoder_block.mixers.0.patch_mixer.mlp.fc2",
+      "decoder.decoder_block.mixers.0.patch_mixer.mlp.dropout2",
+      "decoder.decoder_block.mixers.0.patch_mixer.gating_block",
+      "decoder.decoder_block.mixers.0.patch_mixer.gating_block.attn_layer",
+      "decoder.decoder_block.mixers.0.feature_mixer",
+      "decoder.decoder_block.mixers.0.feature_mixer.norm",
+      "decoder.decoder_block.mixers.0.feature_mixer.norm.norm",
+      "decoder.decoder_block.mixers.0.feature_mixer.mlp",
+      "decoder.decoder_block.mixers.0.feature_mixer.mlp.fc1",
+      "decoder.decoder_block.mixers.0.feature_mixer.mlp.dropout1",
+      "decoder.decoder_block.mixers.0.feature_mixer.mlp.fc2",
+      "decoder.decoder_block.mixers.0.feature_mixer.mlp.dropout2",
+      "decoder.decoder_block.mixers.0.feature_mixer.gating_block",
+      "decoder.decoder_block.mixers.0.feature_mixer.gating_block.attn_layer",
+      "decoder.decoder_block.mixers.1",
+      "decoder.decoder_block.mixers.1.patch_mixer",
+      "decoder.decoder_block.mixers.1.patch_mixer.norm",
+      "decoder.decoder_block.mixers.1.patch_mixer.norm.norm",
+      "decoder.decoder_block.mixers.1.patch_mixer.mlp",
+      "decoder.decoder_block.mixers.1.patch_mixer.mlp.fc1",
+      "decoder.decoder_block.mixers.1.patch_mixer.mlp.dropout1",
+      "decoder.decoder_block.mixers.1.patch_mixer.mlp.fc2",
+      "decoder.decoder_block.mixers.1.patch_mixer.mlp.dropout2",
+      "decoder.decoder_block.mixers.1.patch_mixer.gating_block",
+      "decoder.decoder_block.mixers.1.patch_mixer.gating_block.attn_layer",
+      "decoder.decoder_block.mixers.1.feature_mixer",
+      "decoder.decoder_block.mixers.1.feature_mixer.norm",
+      "decoder.decoder_block.mixers.1.feature_mixer.norm.norm",
+      "decoder.decoder_block.mixers.1.feature_mixer.mlp",
+      "decoder.decoder_block.mixers.1.feature_mixer.mlp.fc1",
+      "decoder.decoder_block.mixers.1.feature_mixer.mlp.dropout1",
+      "decoder.decoder_block.mixers.1.feature_mixer.mlp.fc2",
+      "decoder.decoder_block.mixers.1.feature_mixer.mlp.dropout2",
+      "decoder.decoder_block.mixers.1.feature_mixer.gating_block",
+      "decoder.decoder_block.mixers.1.feature_mixer.gating_block.attn_layer"
+    ],
+    "head_candidates": [
+      "head",
+      "head.dropout_layer",
+      "head.base_forecast_block",
+      "head.flatten"
+    ]
+  },
+  "public_model_output": {
+    "prediction_outputs": {
+      "type": "tensor",
+      "shape": [
+        1,
+        28,
+        1
+      ],
+      "dtype": "torch.float32",
+      "device": "cuda:0"
+    },
+    "backbone_hidden_state": {
+      "type": "tensor",
+      "shape": [
+        1,
+        1,
+        9,
+        192
+      ],
+      "dtype": "torch.float32",
+      "device": "cuda:0"
+    },
+    "decoder_hidden_state": {
+      "type": "tensor",
+      "shape": [
+        1,
+        1,
+        9,
+        128
+      ],
+      "dtype": "torch.float32",
+      "device": "cuda:0"
+    },
+    "hidden_states": [
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    ],
+    "loc": {
+      "type": "tensor",
+      "shape": [
+        1,
+        1,
+        1
+      ],
+      "dtype": "torch.float32",
+      "device": "cuda:0"
+    },
+    "scale": {
+      "type": "tensor",
+      "shape": [
+        1,
+        1,
+        1
+      ],
+      "dtype": "torch.float32",
+      "device": "cuda:0"
+    },
+    "input_data": {
+      "type": "tensor",
+      "shape": [
+        1,
+        512,
+        1
+      ],
+      "dtype": "torch.float32",
+      "device": "cuda:0"
+    }
+  },
+  "hook_records": [
+    {
+      "module_name": "backbone.scaler",
+      "module_class": "TinyTimeMixerStdScaler",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            512,
+            1
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            512,
+            1
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            512,
+            1
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ]
+    },
+    {
+      "module_name": "backbone.patching",
+      "module_class": "TinyTimeMixerPatchify",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            512,
+            1
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          8,
+          64
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.patcher",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            8,
+            64
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          8,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.freq_mod.0",
+      "module_class": "Embedding",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1
+          ],
+          "dtype": "torch.int64",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          64
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.freq_mod.1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            64
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.freq_mod.2",
+      "module_class": "GELU",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.freq_mod.3",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.freq_mod",
+      "module_class": "Sequential",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1
+          ],
+          "dtype": "torch.int64",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            48,
+            36
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          48,
+          72
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            48,
+            72
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          48,
+          72
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            48,
+            72
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          48,
+          36
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            48,
+            36
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          48,
+          36
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            48,
+            36
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          48,
+          36
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            48,
+            36
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          48,
+          36
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            48,
+            36
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          48,
+          36
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.patch_mixer",
+      "module_class": "PatchMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0.feature_mixer",
+      "module_class": "FeatureMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.0",
+      "module_class": "TinyTimeMixerLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            48,
+            36
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          48,
+          72
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            48,
+            72
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          48,
+          72
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            48,
+            72
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          48,
+          36
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            48,
+            36
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          48,
+          36
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            48,
+            36
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          48,
+          36
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            48,
+            36
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          48,
+          36
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            48,
+            36
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          48,
+          36
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.patch_mixer",
+      "module_class": "PatchMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1.feature_mixer",
+      "module_class": "FeatureMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0.mixer_layers.1",
+      "module_class": "TinyTimeMixerLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            36,
+            48
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          36,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.0",
+      "module_class": "TinyTimeMixerAdaptivePatchingBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        [
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              36,
+              48
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              36,
+              48
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              36,
+              48
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          }
+        ]
+      ]
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            96,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          96,
+          36
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            96,
+            36
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          96,
+          36
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            96,
+            36
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          96,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            96,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          96,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            96,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          96,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            96,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          96,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            96,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          96,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.patch_mixer",
+      "module_class": "PatchMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0.feature_mixer",
+      "module_class": "FeatureMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.0",
+      "module_class": "TinyTimeMixerLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            96,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          96,
+          36
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            96,
+            36
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          96,
+          36
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            96,
+            36
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          96,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            96,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          96,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            96,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          96,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            96,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          96,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            96,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          96,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.patch_mixer",
+      "module_class": "PatchMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1.feature_mixer",
+      "module_class": "FeatureMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1.mixer_layers.1",
+      "module_class": "TinyTimeMixerLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            18,
+            96
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          18,
+          96
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.1",
+      "module_class": "TinyTimeMixerAdaptivePatchingBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        [
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              18,
+              96
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              18,
+              96
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              18,
+              96
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          }
+        ]
+      ]
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            192,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          192,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            192,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          192,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            192,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          192,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            192,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          192,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            192,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          192,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            192,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          192,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            192,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          192,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.patch_mixer",
+      "module_class": "PatchMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          384
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            384
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          384
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            384
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0.feature_mixer",
+      "module_class": "FeatureMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.0",
+      "module_class": "TinyTimeMixerLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            192,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          192,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            192,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          192,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            192,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          192,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            192,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          192,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            192,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          192,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            192,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          192,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            192,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          192,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.patch_mixer",
+      "module_class": "PatchMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          384
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            384
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          384
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            384
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1.feature_mixer",
+      "module_class": "FeatureMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2.mixer_layers.1",
+      "module_class": "TinyTimeMixerLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          192
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder.mixers.2",
+      "module_class": "TinyTimeMixerAdaptivePatchingBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        [
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          }
+        ]
+      ]
+    },
+    {
+      "module_name": "backbone.encoder.mlp_mixer_encoder",
+      "module_class": "TinyTimeMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        [
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              36,
+              48
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              36,
+              48
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              36,
+              48
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              18,
+              96
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              18,
+              96
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              18,
+              96
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          }
+        ]
+      ]
+    },
+    {
+      "module_name": "backbone.encoder",
+      "module_class": "TinyTimeMixerEncoder",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            8,
+            64
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "last_hidden_state": {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        "hidden_states": [
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              36,
+              48
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              36,
+              48
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              36,
+              48
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              18,
+              96
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              18,
+              96
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              18,
+              96
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          }
+        ]
+      }
+    },
+    {
+      "module_name": "backbone",
+      "module_class": "TinyTimeMixerModel",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            512,
+            1
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "last_hidden_state": {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        "hidden_states": [
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              36,
+              48
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              36,
+              48
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              36,
+              48
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              18,
+              96
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              18,
+              96
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              18,
+              96
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              192
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          }
+        ],
+        "patch_input": {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            8,
+            64
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        "loc": {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        "scale": {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      }
+    },
+    {
+      "module_name": "decoder.adapter",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            192
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.patch_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.patch_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.patch_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            128,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          128,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.patch_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            128,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          128,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.patch_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            128,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          128,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.patch_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            128,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          128,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.patch_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            128,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          128,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.patch_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            128,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          128,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.patch_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            128,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          128,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.patch_mixer",
+      "module_class": "PatchMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.feature_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.feature_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.feature_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          256
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.feature_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          256
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.feature_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.feature_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.feature_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.feature_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.feature_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0.feature_mixer",
+      "module_class": "FeatureMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.0",
+      "module_class": "TinyTimeMixerLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.patch_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.patch_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.patch_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            128,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          128,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.patch_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            128,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          128,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.patch_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            128,
+            18
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          128,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.patch_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            128,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          128,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.patch_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            128,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          128,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.patch_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            128,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          128,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.patch_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            128,
+            9
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          128,
+          9
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.patch_mixer",
+      "module_class": "PatchMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.feature_mixer.norm.norm",
+      "module_class": "LayerNorm",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.feature_mixer.norm",
+      "module_class": "TinyTimeMixerNormLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.feature_mixer.mlp.fc1",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          256
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.feature_mixer.mlp.dropout1",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          256
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.feature_mixer.mlp.fc2",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.feature_mixer.mlp.dropout2",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.feature_mixer.mlp",
+      "module_class": "TinyTimeMixerMLP",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.feature_mixer.gating_block.attn_layer",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.feature_mixer.gating_block",
+      "module_class": "TinyTimeMixerGatedAttention",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1.feature_mixer",
+      "module_class": "FeatureMixerBlock",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block.mixers.1",
+      "module_class": "TinyTimeMixerLayer",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          9,
+          128
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "decoder.decoder_block",
+      "module_class": "TinyTimeMixerBlock",
+      "input_summary": [],
+      "output_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        [
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              128
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              128
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          }
+        ]
+      ]
+    },
+    {
+      "module_name": "decoder",
+      "module_class": "TinyTimeMixerDecoder",
+      "input_summary": [],
+      "output_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        [
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              128
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              128
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          },
+          {
+            "type": "tensor",
+            "shape": [
+              1,
+              1,
+              9,
+              128
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          }
+        ]
+      ]
+    },
+    {
+      "module_name": "head.flatten",
+      "module_class": "Flatten",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          1152
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "head.dropout_layer",
+      "module_class": "Dropout",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            1152
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          1152
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "head.base_forecast_block",
+      "module_class": "Linear",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            1152
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          1,
+          48
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "module_name": "head",
+      "module_class": "TinyTimeMixerForPredictionHead",
+      "input_summary": [
+        {
+          "type": "tensor",
+          "shape": [
+            1,
+            1,
+            9,
+            128
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output_summary": {
+        "type": "tensor",
+        "shape": [
+          1,
+          28,
+          1
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    }
+  ],
+  "snapshot_directory": "/content/drive/MyDrive/EA_TTM_RETAIL/models/pretrained_ttm",
+  "snapshot_files": [
+    "config.json",
+    "model.safetensors"
+  ],
+  "reload_horizon_verified": true,
+  "contract_sha256": "f8ca950e28ca6b3c8f952308563e49c148d19ade9785c4ccb37d6dce99cab79e"
+}

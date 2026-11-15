@@ -1,0 +1,46 @@
+{
+  "status": "PHASE_04_COMPLETE",
+  "dataset_sha256": "83962ce8bbcb0757215d045f81cac3a7cf4465943334ffa168af326bedc5ed59",
+  "split_sha256": "5ff2e30f43a832bb9e513153bb15daa4e1e67c871b43586f2f2f11ef51396447",
+  "training_config_sha256": "8f511e17136b0eff12c826033d4877ac73ad770d8e491d36affd6f1da3ebc885",
+  "train_origins": [
+    512,
+    960,
+    1409,
+    1857
+  ],
+  "validation_target": [
+    "d_1886",
+    "d_1913"
+  ],
+  "selected_training_batch_size": 512,
+  "selected_learning_rate": 8.697490026177834e-05,
+  "max_epochs": 10,
+  "early_stopping_patience": 2,
+  "best_epoch": 6,
+  "global_step": 1912,
+  "training_runtime_seconds": 55.51601339599995,
+  "total_parameters": 799756,
+  "trainable_parameters": 246818,
+  "backbone_trainable_parameters": 0,
+  "decoder_trainable_parameters": 191474,
+  "head_trainable_parameters": 55344,
+  "zero_shot_metrics": {
+    "mse": 4.557263813520326,
+    "rmse": 2.1347748859119373,
+    "mae": 1.0215323422208904,
+    "wape": 0.7368058755052851
+  },
+  "head_probed_metrics": {
+    "mse": 4.381235936297743,
+    "rmse": 2.0931402094216582,
+    "mae": 1.0073519055974618,
+    "wape": 0.7265778792005794
+  },
+  "head_probe_vs_zero_shot": {
+    "mse_improvement_percent": 3.862578170268524,
+    "rmse_improvement_percent": 1.9503075834852486,
+    "mae_improvement_percent": 1.3881534668397515,
+    "wape_improvement_percent": 1.3881534668397684
+  }
+}
